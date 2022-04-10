@@ -65,7 +65,7 @@ void mat(int n) {
             else {
                 dp[a][b] = 999999999;//엄청 큰수
                 for (k = a; k < b; k++) {
-                    dp[a][b] = min(dp[a][b], dp[a][k] + dp[k + 1][b] + (matrix[a][0] * matrix[k][1] * matrix[b][1]));//DP[i][j] = i번째 행렬부터 j번째행렬까지 최소 연산 횟수
+                    dp[a][b] = min(dp[a][b], dp[a][k] + dp[k + 1][b] + (matrix[a][0] * matrix[k][1] * matrix[b][1]));//DP[i][j] = i번째 행렬부터 j번째행렬까지 최소 연산 g횟수
                 }
             }
         }
